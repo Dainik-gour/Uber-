@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber</title>
+</head>
+<style>
+    body{
+       margin:0px;
+       padding:0px;
+       font-family: UberMove, sans-serif;
+    } 
+    
+ .main{
+    
+    height:900px;
+    }
+    .navBar{
+       
+        display:flex;
+        justify-content: space-between;
+        height:100px;
+    }
+
+    
+    .uber{
+        width:10%;
+        height:30px;
+        margin-top:28px;
+        margin-left:90px;
+        
+    }
+    .login{
+        display: flex;
+        justify-content:space-around;
+       
+         width:15%;
+         margin-top:5px;
+        height:80px;
+    }
+    .uberIMG2{
+        width:100%
+      
+    }
+    .loginBTN{
+        border: solid rgb(20, 19, 19) 2px;
+    }
+    .btn1,.btn2{
+        border: 0px;
+        margin: auto;
+         width:40%;
+         height:50px;
+        border-radius:30px;
+       
+    }
+
+    .btn1{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        font-size:16px;
+        
+    }
+    .btn2{
+        font-size:16px;
+        color: white;
+        background-color: black;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+
+
+
+     /* ------- */
+    .btn2:hover{
+        cursor: pointer;
+        background-color: rgb(50, 46, 46);
+    }
+    .btn1:hover{
+        cursor: pointer;
+        background-color: rgb(227, 221, 221);
+    }
+   .main{
+    background-image:url('https://tb-static.uber.com/prod/image-proc/processed_images/71c3dcc58a3303422dc6530540f87894/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg');
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    background-position:left left;
+   }
+   .order{
+     
+      /* width:40%; */
+      height:60px;
+      margin-top:20%;
+      margin-left:6%;
+   }
+   .msg{
+    font-size:60px;
+    margin: auto;
+   
+   }
+   .input{
+    margin-top:2%;
+    margin-left:5%;
+   }
+   .input2{
+    margin-top:1%;
+    margin-left:1%;
+    width:40%;
+    height:50px;
+    border:0px;
+    border-radius:5px;
+    font-size:16px;
+    padding:4px;
+   }
+   .select{
+    margin-top:1%;
+    margin-left:0.5%;
+    width:10%;
+    height:56px;
+    border:0px;
+    border-radius:5px;
+    padding:4px;
+    font-size:16px;
+   }
+   .find{
+    margin-left:0.5%;
+    /* width:8%; */
+    height:56px;
+    font-size:16px;
+    border-radius:5px;
+    border:0px;
+    color: white;
+    background-color: black;
+   }
+   .Sign{
+    margin-left:6%;
+    font-size:18px;
+   }
+   a{
+    color: black;
+   }
+   .mid{
+    /* border: solid rgb(20, 19, 19) 2px; */
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    width:95%;
+    margin: auto;
+    height:400px;
+    margin-top:3%;
+   }
+   .midIMG{
+    width:90%;
+    margin: auto;
+    /* border: solid rgb(20, 19, 19) 2px; */
+   }
+   .midIMG div{
+   
+    width:100%;
+   
+   }
+   .midIMG img{
+    width:100%;
+   }
+   .city{
+  
+    width:20%;
+    height:50px;
+    /* font-size:30px; */
+    margin-top:3%;
+    margin-left:3%;
+   }
+   .city h1{
+    margin: auto;
+   }
+   .footerIMG{
+    /* border: solid rgb(20, 19, 19) 2px; */
+    width:95%;
+    margin: auto;
+    height:350px;
+   }
+   .footer{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    /* border: solid rgb(20, 19, 19) 2px; */
+    margin: auto;
+    width:95%;
+    height:350px;
+    margin-top:3%;
+   }
+   .footer div{
+    width:30%;
+    /* margin: auto; */
+    color: gray;
+    height:25px;
+    /* border: solid rgb(20, 19, 19) 2px; */
+   }
+   .Countries{
+    margin-left:2%;
+    margin-top:3%;
+   }
+   .Australia{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    /* border: solid rgb(20, 19, 19) 2px; */
+    margin: auto;
+    width:95%;
+    height:380px;
+    margin-top:3%;
+    /* border: solid rgb(20, 19, 19) 2px; */
+   }
+   .Australia div{
+    /* border: solid rgb(20, 19, 19) 2px; */
+    color: gray;
+    height:25px;
+    
+   }
+   .uberEats{
+    display:flex;
+    height:380px;
+    margin: auto;
+    width:95%;
+    /* border: solid rgb(20, 19, 19) 2px; */
+   }
+   .uberEats1,.uberEats2{
+    width:50%;
+    margin: auto;
+    height:380px;
+    /* border: solid rgb(20, 19, 19) 2px; */
+   }
+   .uberEats1IMG{
+    width:20%;
+    /* height:40px; */
+    margin-top:10%;
+    margin-left:8%;
+  
+   }
+   .uberEats1IMG img{
+    width:100%;
+   }
+   .inside {
+    
+    width:90%;
+    height:100px;
+    margin-top:26%;
+    margin-left:7%;
+   
+   }
+   .playStore{
+    display: flex;
+    width:50%;
+    height:80px;
+   
+    margin-top:2%;
+   
+   }
+   .playStore div{
+    width:43%;
+    margin: auto;
+    height:40px;
+    
+   }
+   .playStore img{
+   width:100%;
+   }
+   .uberEats2{
+    display: flex;
+    margin: auto;
+   
+   }
+   
+   .uberEatsMID{
+    margin: auto;
+    height:300px;
+    width:50%;
+    
+   }
+   .uberEatsMID div{
+  
+    width:100%;
+    height:40px;
+    margin: auto;
+    color:gray;
+
+   }
+   /*  */
+
+   
+   @media screen and (max-width:767px){
+        .btn1{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        font-size:10px;
+        
+    }
+    .btn2{
+        font-size:10px;
+        color: white;
+        background-color: black;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+    .uber{
+        width:120px;
+        height:30px;
+        margin-top:28px;
+        margin-left:90px;
+        border: solid rgb(20, 19, 19) 2px;
+    }
+
+    .uberIMG2{
+        width:100%;
+      
+    }
+    .btn1,.btn2{
+        border: 0px;
+        margin: auto;
+        width:60%;
+        height:43px;
+        border-radius:30px;
+       
+    }
+    .login{
+        display: flex;
+        justify-content:space-around;
+        border: solid rgb(20, 19, 19) 2px;
+        width:20%;
+        margin-top:5px;
+        height:80px;
+    }
+    .find{
+    margin-left:0.5%;
+    /* width:8%; */
+    height:56px;
+    font-size:16px;
+    border-radius:5px;
+    border:0px;
+    color: white;
+    background-color: black;
+   }
+   .msg{
+    font-size:40px;
+    margin: auto;
+   
+   }
+   .select{
+    margin-top:1%;
+    margin-left:0.5%;
+    width:20%;
+    height:56px;
+    border:0px;
+    border-radius:5px;
+    padding:4px;
+    font-size:16px;
+   }
+
+   .city{
+    /* border: solid rgb(20, 19, 19) 2px; */
+    width:40%;
+    height:50px;
+    font-size:15px;
+    margin-top:3%;
+    margin-left:3%;
+   }
+    
+     }
+
+
+
+   /*  */
+
+
+
+
+   @media screen and (max-width:480px){
+        .btn1{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        font-size:10px;
+        
+    }
+    .btn2{
+        font-size:10px;
+        color: white;
+        background-color: black;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+    .uber{
+        width:120px;
+        height:30px;
+        margin-top:28px;
+        margin-left:90px;
+        border: solid rgb(20, 19, 19) 2px;
+    }
+
+    .uberIMG2{
+        width:100%;
+      
+    }
+    .btn1,.btn2{
+        border: 0px;
+        margin: auto;
+        width:60%;
+        height:43px;
+        border-radius:30px;
+       
+    }
+    .login{
+        display: flex;
+        justify-content:space-around;
+        border: solid rgb(20, 19, 19) 2px;
+        width:20%;
+        margin-top:5px;
+        height:80px;
+    }
+    .find{
+    margin-left:0.5%;
+    /* width:8%; */
+    height:56px;
+    font-size:16px;
+    border-radius:5px;
+    border:0px;
+    color: white;
+    background-color: black;
+   }
+   .msg{
+    font-size:30px;
+    margin: auto;
+   
+   }
+   .select{
+    margin-top:1%;
+    margin-left:0.5%;
+    width:25%;
+    height:56px;
+    border:0px;
+    border-radius:5px;
+    padding:4px;
+    font-size:16px;
+   }
+
+   .city{
+    /* border: solid rgb(20, 19, 19) 2px; */
+    width:50%;
+    height:50px;
+    font-size:15px;
+    margin-top:3%;
+    margin-left:3%;
+   }
+    
+     }
+
+
+
+</style>
+<body>
+    <div class="main">
+         <div class="navBar">
+             <div class="uber">
+                 <div class="uberIMG">
+                     <img class="uberIMG2" src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg" alt="">
+                 </div>
+             </div>
+             <div class="login">
+                    <button class="btn1">Log in</button>
+                    <button class="btn2">Sign up</button>
+             </div>
+         </div>
+         <div class="order">
+              <h1 class="msg">Order food to your door</h1>
+         </div>
+         <div class="input">
+            <input type="text" class="input2" placeholder="Enter Delivery address">
+            <select name="" id="" class="select">
+                <option value="" class="option">Deliver now </option>
+                <option value="" class="option">Deliver now</option>
+                <option value="" class="option"> Schedule for later</option>
+            </select>
+
+            <button class="find">Find Food</button>
+         </div>
+        <p class="Sign" > <a href="https://auth.uber.com/v2/?breeze_local_zone=phx3&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fapp_clip%3Dfalse%26campaign%3Dsignin_universal_link%26guest_mode%3Dfalse%26marketing_vistor_id%3Dc0be5ce3-acfc-4f1f-b951-04ab29233ac3%26redirect%3D%252F&state=Z_7GznKopMze6hRHeIQIwqwJZ1Fcsg257G28YkixWoM%3D&x-uber-did=c462ed2e-3376-4f2f-b32d-bd382352f44b">Sign In</a> for your recent addresses</p>
+    </div>
+<!-- ------------------------- -->
+
+
+<div class="mid">
+    <div class="midIMG">
+        <div>
+            <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/dd109bb1f7572eed.png" alt="">
+        </div>
+         <h2>Feed Your Employess</h2>
+        <a href="">Create a business account</a>
+    </div>
+    
+    <div class="midIMG">
+        <div>
+            <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/8148ef38ec4096b7.png" alt="">
+        </div>
+        <h2>Your restaurant, delivered</h2>
+        <a href="">Add your restaurant</a>
+    </div>
+    
+     <div class="midIMG">
+        <div>
+            <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/7a9d4feba62d2c0b.png" alt="">
+        </div>
+        <h2>Deliver with uber eats</h2>
+        <a href="">sign up to deliver</a>
+     </div>
+  </div>
+
+  <div class="city"><h1>Cities near me</h1></div>
+  <div class="footerIMG">
+    <img src="./WhatsApp Image 2023-03-22 at 5.53.13 PM.jpeg" alt="">
+  </div>
+
+
+  <div class="footer">
+          <div>Akron</div>
+          <div>Hartford</div>
+          <div>Nashville</div>
+          <div>Providence</div>
+          <div>Albuquerque</div>
+          <div>Houston</div>
+          <div>New Orleans</div>
+          <div>Queens</div>
+          <div>Bridgeport</div>
+          <div>Indianapolis</div>
+          <div>Oklahoma City</div>
+          <div>San Antonio</div>
+          <div>Concord</div>
+          <div>McAllen</div>
+          <div>Omaha</div>
+          <div>Stony Brook</div>
+          <div>Dayton</div>
+          <div>Mesa</div>
+          <div>Orlando</div>
+          <div>Tucson</div>
+          <div>El Paso</div>
+          <div>Milwaukee</div>
+          <div>Palm Bay</div>
+          <div>West Hollywood</div>
+  </div>
+
+  <div class="Countries">
+    <h1>Countries with Uber Eats</h1>
+  </div>
+
+  <div class="Australia">
+     <div>Australia</div>
+     <div>France</div>
+     <div>Netherlands</div>
+     <div>Sweden</div>
+     <div>Belgium</div>
+     <div>Germany</div>
+     <div>New Zealand</div>
+     <div>Switzerland</div>
+     <div>Canada</div>
+     <div>Guatemala</div>
+     <div>Panama</div>
+     <div>Taiwan (ROC)</div>
+     <div>Chile</div>
+     <div>Ireland</div>
+     <div>Poland</div>
+     <div>United Kingdom</div>
+     <div>Costa Rica</div>
+     <div>Italy</div>
+     <div>Portugal</div>
+     <div>United States</div>
+     <div>Dominican Republic</div>
+     <div>Japan</div>
+     <div>South Africa</div>
+     <div></div>
+     <div>Ecuador</div>
+     <div>Kenya</div>
+     <div>Spain</div>
+     <div></div>
+     <div>El Salvador</div>
+     <div>Mexico</div>
+     <div>Sri Lanka</div>
+     <div></div>
+  </div>
+
+
+ <hr>
+
+
+ <div class="uberEats">
+      <div class="uberEats1">
+          <div class="uberEats1IMG">
+            <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg" alt="">
+          </div>
+
+          <div class="inside">
+               <div class="playStore">
+                <div>
+                    <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/783bb4a82e5be29e.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/163bdc9b0f1e7c9e.png" alt="">
+                </div> 
+               </div>
+             
+          </div>
+      </div>
+      <div class="uberEats2">
+       <div class="uberEatsMID">
+           <div> <p>get help</p></div>
+           <div><p>get help</p></div>
+           <div><p>get help</p></div>
+           <div><p>get help</p></div>
+           <div><p>get help</p></div>
+           <div><p>get help</p></div>
+       </div>
+       <div class="uberEatsMID">
+        <div> <p>get help</p></div>
+        <div><p>get help</p></div>
+        <div><p>get help</p></div>
+        <div><p>get help</p></div>
+        <div><p>get help</p></div>
+        <div><p>get help</p></div>
+       </div>
+        
+      </div>
+ </div>
+
+</body>
+</html>
